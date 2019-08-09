@@ -1,12 +1,18 @@
 <div class="container">
 
-<h1>Attitude Bar</h1>
-<% @cocktails.each do |cocktail|%>
-<p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-<% end %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.giphy.com/media/wcgcRnkePIUPS/source.gif);">
+    <div class="container">
+      <h1><strong>Attitute</strong> bar</h1>
+      <p>Change your life and drink more at one of our bars around the world.</p>
+      <a class="btn btn-primary btn-lg" href="#">Find your attitute</a>
+    </div>
+  </div>
 
-<%= link_to "Create your 'Attitude'", new_cocktail_path, class: "btn border" %>
+  <% @cocktails.each do |cocktail|%>
+  <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+  <% end %>
 
-<%= cl_image_tag("uarrchgptofkyobbmjiy", width: 400, height: 300, crop: :fill) %>
+  <%= link_to "Create your 'Attitude'", new_cocktail_path, class: "btn border" %>
+
 
 </div>

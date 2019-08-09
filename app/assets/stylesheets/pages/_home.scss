@@ -1,1 +1,29 @@
 // Specific CSS for your home-page
+body {
+ background-size: cover;
+ background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 48px;
+  color: white;
+  font-weight: bolder;
+}
+
+.banner a {
+  background-color: #D1C6F3;
+}
