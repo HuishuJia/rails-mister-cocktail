@@ -8,11 +8,14 @@
     </div>
   </div>
 
-  <% @cocktails.each do |cocktail|%>
-  <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-  <% end %>
+<% @cocktails.each do |cocktail|%>
+  <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://bluemoonandmistymornings.tumblr.com/image/90519773789)">
+    <p class="cocktail-list"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    <% end %>
 
-  <%= link_to "Create your 'Attitude'", new_cocktail_path, class: "btn border" %>
-
+    <%= link_to "Create your 'Attitude'", new_cocktail_path, class: "btn border" %>
+  </div>
+  </div>
 
 </div>
